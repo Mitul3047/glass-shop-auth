@@ -19,7 +19,7 @@ const Register = () => {
         if (password.length < 6) {
            return toast.error('Password must be 6 character')
         }
-        console.log(name, password, email, imageUrl);
+        // console.log(name, password, email, imageUrl);
 
         // create User
         signUp(email,password)
@@ -67,7 +67,7 @@ const Register = () => {
                                     <span className="label-text">Image Url</span>
                                 </label>
                                 <input
-                                    type="link"
+                                    type="text"
                                     name='imageUrl'
                                     placeholder="image url"
                                     className="input input-bordered" />
